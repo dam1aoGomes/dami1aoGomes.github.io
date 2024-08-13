@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title> Surf </title>
+</head>
+<body>
+    <!--Dados Inputados-->
+    <div class="competidores">
+        <div class="italo">
+            <img width="300" height="300" src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/07/mediana-surfe-paris_f9536a-e1722348418373.jpg?w=1220&h=674&crop=1&quality=50" alt="">
+            <p>Italo Ferreira</p>
+            <div class="ondas-surfadas" id="ondas-italo"> </div>
+            <hr>
+            <div class="nota-final" id="nota-final-italo"></div>
+        </div>
+        <div class="yago">
+            <img width="300" height="300" src="https://i.pinimg.com/474x/95/74/3d/95743d639b4ea4d15c740d7a973c548f.jpg" alt="">
+            <p>Yago</p>
+            <div class="ondas-surfadas" id="ondas-yago"> </div>
+            <hr>
+            <div class="nota-final" id="nota-final-yago"></div>
+        </div>
+    </div>
+    <!--Formulario-->
+    <h3> Enviar Nova Pontuação </h3>
+    <form>
+        Italo
+        <input type="radio" name="surfista" id="italo-ferreira" value="italo" required> <br>
+        Yago
+        <input type="radio" name="surfista" id="yago-dora" value="yago" required> <br>
+        Nota
+        <input type="number" name="nota" id="nota" min="0" max="10" required> <br>
+    </form>
+    
+    <button id="button-add-pontuacao">Adicionar Pontuação</button>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
